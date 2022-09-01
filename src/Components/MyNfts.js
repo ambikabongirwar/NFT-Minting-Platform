@@ -38,13 +38,15 @@ export default function MyNfts() {
     ); 
 
   return (
-    <Container>
-        <Typography variant="h4" component="h2">
-            My NFTs 
-        </Typography>
-        <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-            {nftItems}
-        </Grid>
-    </Container>
+    <div style={{display: 'flex', margin: '0.4cm'}}>
+            <Container>
+            <Typography variant="h4" component="h2" sx={{ marginY: "0.4cm", }}>
+                My NFTs 
+            </Typography>
+            <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                {nftItems}
+            </Grid>
+        </Container>
+    </div>
   )
 }
